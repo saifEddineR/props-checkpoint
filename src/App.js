@@ -1,24 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Profile from './profile/compProfile';
 
+//variables
+const para = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel consectetur arcu, id fringilla turpis. Cras ornare hendrerit rhoncus. Donec."
+const x = 7;
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Profile fullName='Cho Kyu-hyun' bio={para} profession='Kpop singer' >
+          <img src='https://i.pinimg.com/originals/3f/61/50/3f61503c4e39c46714b00df138d4259c.jpg' alt='kyuhyun' height='300px' />
+        </Profile>
       </header>
-    </div>
+    </div >
   );
 }
 
